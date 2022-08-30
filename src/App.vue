@@ -75,8 +75,8 @@
 
 <script>
 
-import orButton from './components/button.vue'
-import orButtonGroup from './components/buttonGroup'
+import orButton from './components/button/button.vue'
+import orButtonGroup from './components/button/buttonGroup'
 
 export default {
   name: "app",
