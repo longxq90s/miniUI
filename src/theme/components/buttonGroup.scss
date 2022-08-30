@@ -1,0 +1,36 @@
+.or-button-group{
+  display: inline;
+  .or-button + .or-button{
+    .or-button--primary,
+    .or-button--success,
+    .or-button--warning,
+    .or-button--danger,
+    {
+      border-right-color: rgba(255,255,255,.5);
+    }
+    margin-left: 0;
+  }
+  .or-button:first-child{
+    border-right-color: rgba(255,255,255,.5);
+  }
+  .or-button:last-child{
+    border-left-color: rgba(255,255,255,.5);
+  }
+  .or-button--primary:not(last-child):not(first-child){
+    border-right-color: rgba(255,255,255,.5);
+    border-left-color: rgba(255,255,255,.5);
+  }
+
+  .or-button:first-child:not(:last-child){
+    border-bottom-right-radius: 0;
+    border-top-right-radius:0 ;
+  }
+  .or-button + .or-button{
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .or-button:last-child:not(:first-child){
+    border-bottom-left-radius: 0;
+    border-top-left-radius:0 ;
+  }
+}
